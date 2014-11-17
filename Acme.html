@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Acme</title>
+
+	<style>	
+
+	ul{
+
+	}
+
+	li{
+		list-style: none;
+		display:inline-block;
+		padding:5px;
+	}
+
+	h1{
+		size:20px;
+		color:gray;
+		font-family: helvetica, sans-serif;
+	}
+
+	p{
+		line-height: 25px;
+		font-size:14px;
+		color:black;
+		font-family: helvetica, sans-serif;
+	}
+
+	a{
+		font-weight: bold;
+		color:gray;
+		font-family: helvetica, sans-serif;
+		font-size:30px;
+		text-decoration: none;
+	}	
+	
+	section{
+		text-align: justify;
+		display: inline-block;
+	}
+	
+	#container{
+		min-width: 85%;
+		margin: 0 auto;
+	}
+	
+
+	#nav{
+		padding-top:10px;
+		display: inline-block;
+		float:right;
+	}
+
+
+	#logo{
+		display:inline-block;
+		background-image: url(images/acme-logo.png);
+		width:192px;
+		height:88px;
+	}
+
+	.section_text{
+		display: block;
+		margin: 0 auto;
+		width:100%;
+	}
+
+
+@media all and (min-width:768px){
+	#logo{
+		display:inline-block;	
+	}
+
+	#head{
+		padding-top: 15px;
+	}	
+
+	#gallery{
+		padding-top: 15px;
+	}
+
+	.section_text{
+		margin: 0 auto;
+		width:100%;
+	}
+
+	section{
+		width: 48%;
+		padding:5px;
+		text-align: left;
+		display:inline-block;
+		padding-left: 30px;
+	}
+
+	#container{
+		max-width:960px;
+		margin: 0 auto;
+	}	
+	
+
+
+
+	#gallery-image{
+		width:100%;
+		display: inline-block;
+	}
+
+		
+	.section_column{
+		padding:5px;
+		display: inline-block;
+	}
+
+
+}
+
+
+@media all and (min-width:401px){
+	
+	#logo{
+		display:inline-block;	
+	}
+
+	#head{
+		padding-top: 15px;
+	}	
+
+	#gallery{
+		padding-top: 15px;
+	}
+
+
+	#nav{
+		float:right;
+		display:block;
+	}
+
+	section{
+		text-align: left;
+		display:inline-block;
+		min-width:45%;
+		padding-left: 10px;
+	}
+
+	#container{
+		max-width:960px;
+		margin: 0 auto;
+	}	
+	
+
+	#gallery-image{
+		width:100%;
+		display: inline-block;
+	}
+
+
+
+}
+
+@media all and (max-width:400px){
+		
+	section{
+		text-align: left;
+		min-width: 350px;
+	}
+
+	#container{
+		max-width:90%;
+		margin: 0 auto;
+	}	
+
+	#nav{
+		float:left;
+		display:block;
+	}
+
+	#gallery-image{
+		display: none;
+	}
+
+
+
+	li{
+		min-width: 50px
+		list-style: none;
+		display:block;
+		padding:5px;
+	}	
+
+}
+
+
+	</style>
+
+</head>
+
+<body>
+	<div id="container">
+		<div id="head">
+			<div id="logo">
+			</div>
+
+			<div id="nav">
+				<ul style="padding-left:0px;">
+					<li><a href="">HOME</a></li>
+					<li><a href="">ABOUT US</a></li>
+					<li><a href="">CONTACT</a></li>
+				</ul>
+			</div>
+		</div>
+
+
+		<div id="gallery">
+			<img id="gallery-image" src="images/anvil.png">
+		</div>
+		
+
+		<div class="section_text">
+			<section class="section_column">
+				<h1> Why Acme?</h1>
+				<p>
+					Bacon ipsum dolor amet cupim jowl swine tail pork belly short ribs kevin ham hock fatback. Kielbasa cow ham beef short loin, swine tongue meatball ball tip venison beef ribs jerky shoulder. Andouille filet mignon shankle doner porchetta beef pig flank landjaeger pork loin. Short ribs ham hock cupim jerky, bacon brisket spare ribs pancetta. Beef beef ribs ribeye leberkas ham tongue, capicola picanha sausage pork sirloin drumstick. Prosciutto porchetta sirloin turducken picanha, jowl spare ribs bacon chuck hamburger tail sausage.
+				</p>
+			</section>
+
+			<section class="section_column">
+				<h1> Anvils Are Not Working</h1>
+				<p>
+					Bacon ipsum dolor amet cupim jowl swine tail pork belly short ribs kevin ham hock fatback. Kielbasa cow ham beef short loin, swine tongue meatball ball tip venison beef ribs jerky shoulder. Andouille filet mignon shankle doner porchetta beef pig flank landjaeger pork loin. Short ribs ham hock cupim jerky, bacon brisket spare ribs pancetta. Beef beef ribs ribeye leberkas ham tongue, capicola picanha sausage pork sirloin drumstick. Prosciutto porchetta sirloin turducken picanha, jowl spare ribs bacon chuck hamburger tail sausage.
+				</p>
+			</section>
+		</div>
+
+	</div>
+</body>
+</html>
